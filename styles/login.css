@@ -1,0 +1,33 @@
+body {
+    background: linear-gradient(to bottom, rgba(169, 171, 172, 0.27) 0%, rgba(0, 177, 253, 0.898) 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.login-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.login {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.605);
+    width: 500px;
+    border-radius: 15px;
+    padding: 25px 70px 50px 70px;
+}
+
+.logo {
+    width: 200px;
+}
+
+.login label {
+    font-size: 20px;
+}
+
+input {
+    font-size: 14px !important;
+}

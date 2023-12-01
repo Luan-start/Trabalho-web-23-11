@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro Usuário</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="../styles/register.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+</head>
+
+<body>
+    <div class="register-container">
+
+        <div class="text-center">
+
+            <h3 class="mt-3">Cadastro de Usuário</h3>
+            <img src="../imagem/log5.png" class="logo mt-3">
+
+        </div>
+
+        <div id="mensagemErro" class="alert alert-danger mt-3" role="alert"></div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="form-group">
+                    <label>Nome</label>
+                    <input type="text" id="nome" class="form-control" placeholder="Informe seu nome" required>
+                </div>
+                <div class="form-group">
+                    <label>Perfil</label>
+                    <input type="text" id="perfil" class="form-control" placeholder="Informe o nome do seu perfil" required>
+                </div>
+                <div class="form-group">
+                    <label>Email</label>
+                    <input type="email" id="email" class="form-control" placeholder="Informe seu Email" required>
+                </div>
+                <div class="form-group">
+                    <label>Senha</label>
+                    <input type="password" id="senha" class="form-control" placeholder="Qualquer coisa menos adm123.." required>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-3">
+            <div class="col-md-12 d-flex justify-content-center">
+                <button onclick="cadastrarUsuario()" type="button" class="btn btn-outline-info btn-lg">Cadastrar-se</button>
+                <button onclick="sair()" type="button" class="btn btn-outline-info btn-lg ml-2">Voltar</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function sair() {
+            window.location.href = "login.html";
+            localStorage.setItem("token", null);
+        }
+    </script>
+    <script src="../userService.js"></script>
+</body>
+
+</html>

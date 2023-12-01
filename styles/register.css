@@ -1,0 +1,62 @@
+body {
+    background: linear-gradient(to bottom, rgba(84, 158, 197, 0.27) 0%, rgba(2, 179, 255, 0.898) 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.register-container {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.605);
+    width: 500px;
+    margin: 100px auto;
+    border-radius: 15px;
+    padding: 28px 55px;
+}
+
+.logo {
+    width: 200px;
+}
+
+h3 {
+    margin-left: -25px;
+}
+
+.register-container label {
+    font-size: 20px;
+}
+
+.register-container input {
+    font-size: 20px; 
+}
+
+.register-container table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin: auto;
+    font-size: 18px;
+    width: 100%;
+    border: 1px solid rgb(142, 188, 228);
+    background-color: rgb(142, 188, 228);
+}
+
+.register-container table th {
+    font-weight: 600;
+    text-align: center;
+    padding: 16px;
+}
+
+.register-container table td {
+    font-weight: 400;
+    text-align: center;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: white;
+    border: 1px solid white;
+}
+
+.logo {
+    width: 200px;
+}
